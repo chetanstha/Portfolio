@@ -68,9 +68,9 @@ const HeroSection = () => {
         >
           <div className="rounded-full bg-[#181818] w-[280px] h-[300px] lg:w-[400px] lg:h-[400px] relative">
             <Image
-              src="/images/chetan.png" // Ensure this path is correct in the public folder
+              src="./images/front.png" // Ensure this path is correct in the public folder
               alt="hero image"
-              className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/3 left-1/2"
+              className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
               width={300}
               height={300}
             />
