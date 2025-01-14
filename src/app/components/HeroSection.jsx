@@ -37,11 +37,11 @@ const HeroSection = () => {
             />
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-            "Passionate about leveraging cutting-edge technologies to create
-            innovative solutions and drive business growth. With a strong
+            &quot;Passionate about leveraging cutting-edge technologies to
+            create innovative solutions and drive business growth. With a strong
             background in web development, data science, and cloud computing, I
             thrive on tackling complex challenges and turning ideas into
-            reality. Let's collaborate and make an impact together."
+            reality. Let&apos;s collaborate and make an impact together.&quot;
           </p>
           <div>
             <Link
