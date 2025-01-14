@@ -1,6 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    output: "export",
-}
-
-module.exports = nextConfig
+    output: 'export', // This is for static export
+    images: {
+      unoptimized: true, // Disable image optimization
+    },
+  };
+  
+  module.exports = nextConfig;
+  
