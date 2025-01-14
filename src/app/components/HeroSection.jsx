@@ -44,15 +44,20 @@ const HeroSection = () => {
             reality. Let&apos;s collaborate and make an impact together.&quot;
           </p>
           <div>
+            {/* View CV - Link to Google Drive view page */}
             <Link
-              href="/#contact"
+              href="https://drive.google.com/file/d/1Q4fwdj_peGkr03DFIyosxgUatH7BquEz/view?usp=drive_link" // View CV on Google Drive
               className="px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-200 text-white"
+              target="_blank" // Opens the link in a new tab
             >
               View CV
             </Link>
+
+            {/* Download CV - Direct download link from Google Drive */}
             <Link
-              href="/"
+              href="https://drive.google.com/uc?export=download&id=1Q4fwdj_peGkr03DFIyosxgUatH7BquEz" // Direct download link
               className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-800 text-white mt-3"
+              download // Ensures the file is downloaded
             >
               <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
                 Download CV
