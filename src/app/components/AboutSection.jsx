@@ -74,33 +74,34 @@ const AboutSection = () => {
             on backend development and end-to-end implementation of AI/ML models
             for various tools. Driven by a passion for innovation and continuous
             learning, I thrive on exploring new technologies and pushing the
-            boundaries of what's possible.
+            boundaries of what&apos;s possible.
           </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton
               selectTab={() => handleTabChange("skills")}
               active={tab === "skills"}
             >
-              {" "}
-              Skills{" "}
+              Skills
             </TabButton>
             <TabButton
               selectTab={() => handleTabChange("education")}
               active={tab === "education"}
             >
-              {" "}
-              Education{" "}
+              Education
             </TabButton>
             <TabButton
               selectTab={() => handleTabChange("certifications")}
               active={tab === "certifications"}
             >
-              {" "}
-              Certifications{" "}
+              Certifications
             </TabButton>
           </div>
           <div className="mt-8">
-            {TAB_DATA.find((t) => t.id === tab).content}
+            {isPending ? (
+              <p className="text-gray-500">Loading...</p> // Loading state when switching tabs
+            ) : (
+              TAB_DATA.find((t) => t.id === tab).content
+            )}
           </div>
         </div>
       </div>
